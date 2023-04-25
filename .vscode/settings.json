@@ -60,5 +60,6 @@
       }
     ]
   },
-  "hardhat.telemetry": false
+  "hardhat.telemetry": false,
+  "cSpell.words": ["IWETH", "keccak", "VRGDA"]
 }

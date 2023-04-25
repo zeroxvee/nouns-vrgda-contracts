@@ -40,7 +40,7 @@ task('storage-layout', 'Prints the storage layout', async (_, hre) => {
 // Go to https://hardhat.org/config/ to learn more
 const config: HardhatUserConfig = {
   solidity: {
-    version: process.env.SOLC_VERSION || '0.8.7',
+    version: process.env.SOLC_VERSION || '0.8.17',
     settings: {
       optimizer: {
         enabled:
@@ -146,6 +146,7 @@ const config: HardhatUserConfig = {
     polygonMumbai: {
       url: process.env.POLYGON_MUMBAI_RPC_URL || '',
       accounts: getWallet(),
+      gasPrice: 35000000000,
     },
     rinkeby: {
       url: process.env.RINKEBY_RPC_URL || '',
